@@ -1,8 +1,10 @@
 <template>
-  <div></div>
+  <layoutcontent></layoutcontent>
 </template>
 <script>
-export default {
 
+import Layoutcontent from './components/layout/Content'
+export default {
+  components: { Layoutcontent }
 }
 </script>
