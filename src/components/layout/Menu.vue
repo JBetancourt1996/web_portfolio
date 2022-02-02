@@ -1,7 +1,7 @@
 <template>
     <section class="fixed top-0 left-0 right-0" style=" background-color: #1f2235">
         <nav
-            class="flex py-2 mx-5 justify-end bg-gdray-200"
+            class="flex py-2 mx-5 md:justify-end bg-gdray-200"
             :class="open ? ' flex justify-between' : ' justify-end '"
         >
             <!-- <div class="hidden md:flex">
@@ -18,13 +18,15 @@
                     >{{ items.name }}</li>
                 </ul>
             </div>
-            <div :class="open ? 'justify-between' : 'hidden'">
-                <div class="-mt-5 py-2">
+
+            <div class="-mt-5 py-2" :class="open ? '' : ' hidden'">
+                <div class>
                     <ul class="text-white font-semibold py-1" v-for="items in menu" :key="items.id">
-                        <li class="text-white px-2 py-1 font-semibo">{{ items.name }}</li>
+                        <li class="text-white px-2 py-1 font-semibold md:hidden">{{ items.name }}</li>
                     </ul>
                 </div>
             </div>
+
             <div class="md:hidden" :class="open ? 'h-56' : ''">
                 <nav class>
                     <div @click="open = !open" class="animate-pulse">
