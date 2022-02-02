@@ -9,7 +9,7 @@
             </div>-->
             <div class="md:flex hidden">
                 <ul
-                    class="text-white lg:text-2xl text-lg px-4 gap-4"
+                    class="text-white xl:text-2xl text-lg px-4 gap-4"
                     v-for="items in menu"
                     :key="items.id"
                 >
@@ -19,7 +19,7 @@
                 </ul>
             </div>
             <div :class="open ? 'justify-between' : 'hidden'">
-                <div class="-mt-5 py-12">
+                <div class="-mt-5 py-2">
                     <ul class="text-white font-semibold py-1" v-for="items in menu" :key="items.id">
                         <li class="text-white px-2 py-1 font-semibo">{{ items.name }}</li>
                     </ul>
