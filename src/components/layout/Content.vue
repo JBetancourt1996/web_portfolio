@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col flex-1 relative h-screen">
-        <slot></slot>
+    <div class="flex flex-col h-screen relative">
+        <slot />
     </div>
 </template>
 <script>

@@ -1,5 +1,8 @@
 <template>
-    <section class="fixed top-0 left-0 right-0" style=" background-color: #1f2235">
+    <section
+        class="fixed top-0 left-0 right-0 border-b-2 border-red-500"
+        style=" background-color: #1f2235"
+    >
         <nav
             class="flex py-2 mx-5 md:justify-end bg-gdray-200"
             :class="open ? ' flex justify-between' : ' justify-end '"

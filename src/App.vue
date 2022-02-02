@@ -1,55 +1,16 @@
 <template>
   <layoutcontent>
-    <Layoutmenu />
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <div>4444</div>
-    <d></d>
+    <Layoutmenu></Layoutmenu>
+    <layoutbody />
   </layoutcontent>
 </template>
 <script>
 
 import Layoutcontent from './components/layout/Content'
 import Layoutmenu from './components/layout/Menu'
+import Layoutbody from './components/layout/body'
 
 export default {
-  components: { Layoutcontent, Layoutmenu, }
+  components: { Layoutcontent, Layoutmenu, Layoutbody }
 }
 </script>
