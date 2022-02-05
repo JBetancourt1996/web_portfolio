@@ -24,8 +24,16 @@
 
             <div class="-mt-5 py-2" :class="open ? '' : ' hidden'">
                 <div class>
-                    <ul class="text-white font-semibold py-1" v-for="items in menu" :key="items.id">
-                        <li class="text-white px-2 py-1 font-semibold md:hidden">{{ items.name }}</li>
+                    <ul
+                        class="text-white font-semibold py-1"
+                        v-for="items in menu"
+                        :key="items.id"
+                        :to="items.to"
+                    >
+                        <router-link
+                            :to="{ name: '', params: { links: 'items.to' }, }"
+                            class="text-white px-2 py-1 font-semibold md:hidden"
+                        >{{ items.name }}</router-link>
                     </ul>
                 </div>
             </div>
@@ -62,11 +70,11 @@ export default {
             open: false,
 
             menu: [
-                { id: 1, name: 'Home' },
-                { id: 2, name: 'Services' },
-                { id: 3, name: 'About' },
-                { id: 4, name: 'Skills' },
-                { id: 5, name: 'Contact' }
+                { id: 1, name: 'Home', to: '/', components: 'Home', },
+                { id: 2, name: 'Services', to: '/service', components: 'Services', },
+                { id: 3, name: 'About', to: '/About', components: 'About', },
+                { id: 4, name: 'Skills', to: '/Skills', components: 'Skills', },
+                { id: 5, name: 'Contact', to: '/Contact', components: 'Contact', }
             ]
 
 
