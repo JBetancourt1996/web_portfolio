@@ -1,16 +1,20 @@
 <template>
-  <layoutcontent>
-    <Layoutmenu></Layoutmenu>
-    <layoutbody />
-  </layoutcontent>
+  <layout-content class="mt-12">
+    <layout-menu></layout-menu>
+
+    <router-view />
+  </layout-content>
 </template>
+
 <script>
-
-import Layoutcontent from './components/layout/Content'
-import Layoutmenu from './components/layout/Menu'
-import Layoutbody from './components/layout/body'
-
+import LayoutContent from './components/layout/Content'
+import LayoutMenu from './components/layout/Menu'
 export default {
-  components: { Layoutcontent, Layoutmenu, Layoutbody }
+  components: {
+    LayoutContent,
+    LayoutMenu
+  }
 }
 </script>
+
+

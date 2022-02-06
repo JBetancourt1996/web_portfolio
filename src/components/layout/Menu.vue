@@ -7,34 +7,21 @@
             class="flex py-2 mx-5 md:justify-end bg-gdray-200"
             :class="open ? ' flex justify-between' : ' justify-end '"
         >
-            <!-- <div class="hidden md:flex">
-                <img src="../../assets/vue.jpg" alt height="100" width="100" />
-            </div>-->
-            <div class="md:flex hidden">
-                <ul
-                    class="text-white xl:text-2xl text-lg px-4 gap-4"
-                    v-for="items in menu"
-                    :key="items.id"
-                >
-                    <li
-                        class="text-white hover:text-red-500 px-2 py-1 font-semibold"
-                    >{{ items.name }}</li>
-                </ul>
+            <div class="md:flex hidden" v-for="items in menu" :key="items.id">
+                <router-link
+                    tag="a"
+                    class="text-white hover:text-red-500 font-semibold xl:text-2xl text-lg px-4 gap-4"
+                    :to="items.to"
+                >{{ items.name }}</router-link>
             </div>
 
-            <div class="-mt-5 py-2" :class="open ? '' : ' hidden'">
-                <div class>
-                    <ul
-                        class="text-white font-semibold py-1"
-                        v-for="items in menu"
-                        :key="items.id"
+            <div class="py-2 flex flex-col gap-4" :class="open ? '' : ' hidden'">
+                <div class v-for="items in menu" :key="items.id">
+                    <router-link
+                        tag="a"
+                        class="text-white text-lg px-2 py-1 font-semibold md:hidden"
                         :to="items.to"
-                    >
-                        <router-link
-                            :to="{ name: '', params: { links: 'items.to' }, }"
-                            class="text-white px-2 py-1 font-semibold md:hidden"
-                        >{{ items.name }}</router-link>
-                    </ul>
+                    >{{ items.name }}</router-link>
                 </div>
             </div>
 
@@ -70,8 +57,8 @@ export default {
             open: false,
 
             menu: [
-                { id: 1, name: 'Home', to: '/', components: 'Home', },
-                { id: 2, name: 'Services', to: '/service', components: 'Services', },
+                { id: 1, name: 'Home', to: '/', },
+                { id: 2, name: 'Services', to: '/Services', },
                 { id: 3, name: 'About', to: '/About', components: 'About', },
                 { id: 4, name: 'Skills', to: '/Skills', components: 'Skills', },
                 { id: 5, name: 'Contact', to: '/Contact', components: 'Contact', }
@@ -81,7 +68,7 @@ export default {
         }
     },
     components: {
-        // Slide
+
     },
     methods: {
 
