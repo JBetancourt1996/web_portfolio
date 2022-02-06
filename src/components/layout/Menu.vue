@@ -1,7 +1,6 @@
 <template>
     <section
-        class="fixed top-0 left-0 right-0 border-b-2 border-red-500"
-        style=" background-color: #1f2235"
+        class="fixed top-0 left-0 right-0 border-b-2 border-red-500 bg-gradient-to-r from-gray-700 via-gray-900 to-black opacity-90"
     >
         <nav
             class="flex py-2 mx-5 md:justify-end bg-gdray-200"
