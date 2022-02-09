@@ -1,6 +1,7 @@
 <template>
     <section
-        class="fixed top-0 left-0 right-0 border-b-2 border-red-500 bg-gradient-to-r from-gray-700 via-gray-900 to-black opacity-90"
+        class="fixed top-0 z-10 left-0 right-0 border-b-2 border-red-500 bg-gradient-to-r from-gray-700 via-gray-900 to-black"
+        :class="open ? 'z-20' : ''"
     >
         <nav
             class="flex py-2 mx-5 md:justify-end bg-gdray-200"
@@ -48,19 +49,38 @@
     </section>
 </template>
 <script>
-
 export default {
     name: "Menu",
+
     data() {
         return {
             open: false,
 
-            menu: [
-                { id: 1, name: 'Home', to: '/', },
-                { id: 2, name: 'Services', to: '/Services', },
-                { id: 3, name: 'About', to: '/About', components: 'About', },
-                { id: 4, name: 'Skills', to: '/Skills', components: 'Skills', },
-                { id: 5, name: 'Contact', to: '/Contact', components: 'Contact', }
+            menu: [{
+                id: 1,
+                name: 'Home',
+                to: '/',
+            },
+            {
+                id: 2,
+                name: 'Services',
+                to: '/Services',
+            },
+            {
+                id: 3,
+                name: 'About',
+                to: '/About',
+            },
+            {
+                id: 4,
+                name: 'Skills',
+                to: '/Skills',
+            },
+            {
+                id: 5,
+                name: 'Contact',
+                to: '/Contact'
+            }
             ]
 
 

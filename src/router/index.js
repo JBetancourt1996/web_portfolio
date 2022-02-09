@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/About',
     name: 'About',
-    component: () => import('../views/About')
+    component: ()  =>  import('../views/About')
   },
     {
     path: '/Skills',
@@ -39,3 +39,4 @@ const router = createRouter({
 })
 
 export default router
+
