@@ -1,27 +1,25 @@
 <template>
   <layout-content>
     <div
-      class="w-full h-full flex  justify-center content-center py-12 from-gray-900 to-gray-600 bg-gradient-to-r"
+      class="w-full h-full flex flex-col gap-4  from-gray-900 to-gray-600 bg-gradient-to-r"
     >
     
-      <div class="flex flex-col space-y-4 ">
+
+      
         <div
-          class="bg-gra-400 h-32 w-32 mx-4 flex tdext-center  "
+          class=" h-32 w-32 mt-4 mx-auto "
         >
     
             <img class=" rounded-full " src="../../src/assets/img/jb.jpg" alt />
         
         </div>
-        <div class=" ">
-     
-          <div class=" w-96 mx-8 ">
-            <p
-              class=" text-blue-400  text-xl text-justify "
-            >My name is <i class="text-green-400">Jorge Betancourt</i>, I have knowledge of web development  and I focus on modern  web technology</p>
-          </div>
-        </div>
-            <p class=" mx-6 md:mx-10 text-xl font-semibold text-white">Social network</p>
-          <div class=" flex  md:mx-6">
+         <p
+              class=" text-blue-400  text-xl  md:mx-auto mx-4 "
+            >My name is <i class="text-green-400">Jorge Betancourt</i>, I have knowledge of web development. <br>  and I focus on modern  web technology</p>
+  
+            <hr>
+    <p class=" mx-auto text-center md:mx-10 text-xl font-semibold text-white">Social network</p>
+          <div class=" flex mx-auto">
                <div
             class="inline-block leading-none  px-4 bgd-green-200"
             v-for="items in red"
@@ -32,10 +30,8 @@
                 <img class="w-6 h-6" :src="items.icon" alt />
               </a>
             </div>
+               </div>
           </div>
-        </div>
-        
-      </div>
     </div>
   </layout-content>
 </template>
