@@ -1,7 +1,7 @@
 <template>
   <layout-content>
     <div
-      class="w-full h-full flex flex-col gap-4  from-gray-900 to-gray-600 bg-gradient-to-r"
+      class=" md:h-full flex flex-col gap-4  from-gray-900 to-gray-600 bg-gradient-to-r"
     >
     
 
@@ -14,10 +14,10 @@
         
         </div>
          <p
-              class=" text-blue-400  text-xl  md:mx-auto mx-4 "
+              class=" text-white text-xl  md:mx-auto mx-4 "
             >My name is <i class="text-green-400">Jorge Betancourt</i>, I have knowledge of web development. <br>  and I focus on modern  web technology</p>
   
-            <hr>
+         
     <p class=" mx-auto text-center md:mx-10 text-xl font-semibold text-white">Social network</p>
           <div class=" flex mx-auto">
                <div
@@ -32,6 +32,17 @@
             </div>
                </div>
           </div>
+
+             <p class=" mx-auto text-center md:mx-10 text-xl font-semibold text-white">Tecnology</p>
+          <div class=" flex px-4 gap-4 justify-center bg-dblack py-4 -mt-3">
+                <div  v-for="items in img" :key="items.id">
+        
+              <img  :src="items.img" alt="" class=" h-32 w-32 rounded-full">
+          
+        
+          </div>
+          </div>
+      
     </div>
   </layout-content>
 </template>
@@ -78,11 +89,15 @@ export default {
         estilo: 'from-gray-200 to-gray-600 bg-gradient-to-r'
 
       }
-      ]
+      ],
+      img:[{id:1,
+      img: require('../assets/img/vue.jpg')
+      },
+      {id:2,
+      img: require('../assets/img/tail.jpeg')
+      }]
     }
   },
-  methods: {
-
-  }
+ 
 }
 </script>
