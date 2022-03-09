@@ -1,7 +1,7 @@
 <template>
   <layout-content>
     <div
-      class=" md:h-full flex flex-col gap-4  from-gray-900 to-gray-600 bg-gradient-to-r"
+      class="  flex flex-col gap-4  from-gray-900 to-gray-600 bg-gradient-to-r"
     >
     
 
