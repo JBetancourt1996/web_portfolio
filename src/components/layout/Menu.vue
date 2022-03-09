@@ -10,7 +10,8 @@
             <div class="md:flex hidden" v-for="items in menu" :key="items.id">
                 <router-link
                     tag="a"
-                    class="text-white hover:text-red-500 font-semibold xl:text-2xl text-lg px-4 gap-4"
+                    class="text-white hover:text-red-500 border-transparent font-semibold xl:text-2xl text-lg px-4 gap-4"
+                    :class="'border-b-2 hover:border-white'"
                     :to="items.to"
                 >{{ items.name }}</router-link>
             </div>
@@ -86,12 +87,8 @@ export default {
 
         }
     },
-    components: {
 
-    },
-    methods: {
 
-    }
 
 
 }
