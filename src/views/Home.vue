@@ -33,7 +33,7 @@
                </div>
           </div>
 
-             <p class=" mx-auto text-center md:mx-10 text-xl font-semibold text-white">Tecnology</p>
+             <p class=" mx-auto text-center md:mx-10 text-xl font-semibold text-white">Technology</p>
           <div class=" flex px-4 gap-4 justify-center bg-dblack py-4 -mt-3">
                 <div  v-for="items in img" :key="items.id">
         
