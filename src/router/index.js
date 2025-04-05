@@ -7,29 +7,29 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/Services',
-    name: 'Services',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Services')
-  },
-  {
-    path: '/About',
-    name: 'About',
-    component: ()  =>  import('../views/About')
-  },
-    {
-    path: '/Skills',
-    name: 'Skills',
-    component: () => import('../views/Skills')
-  },
-    {
-    path: '/Contact',
-    name: 'Contact',
-    component: () => import('../views/Contact')
-  },
+  // {
+  //   path: '/Services',
+  //   name: 'Services',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/Services')
+  // },
+  // {
+  //   path: '/About',
+  //   name: 'About',
+  //   component: ()  =>  import('../views/About')
+  // },
+  //   {
+  //   path: '/Skills',
+  //   name: 'Skills',
+  //   component: () => import('../views/Skills')
+  // },
+  //   {
+  //   path: '/Contact',
+  //   name: 'Contact',
+  //   component: () => import('../views/Contact')
+  // },
   
 ]
 
