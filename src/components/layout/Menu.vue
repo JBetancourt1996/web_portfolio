@@ -62,26 +62,26 @@ export default {
                 name: 'Home',
                 to: '/',
             },
-            {
-                id: 2,
-                name: 'Services',
-                to: '/Services',
-            },
-            {
-                id: 3,
-                name: 'About',
-                to: '/About',
-            },
-            {
-                id: 4,
-                name: 'Skills',
-                to: '/Skills',
-            },
-            {
-                id: 5,
-                name: 'Contact',
-                to: '/Contact'
-            }
+            // {
+            //     id: 2,
+            //     name: 'Services',
+            //     to: '/Services',
+            // },
+            // {
+            //     id: 3,
+            //     name: 'About',
+            //     to: '/About',
+            // },
+            // {
+            //     id: 4,
+            //     name: 'Skills',
+            //     to: '/Skills',
+            // },
+            // {
+            //     id: 5,
+            //     name: 'Contact',
+            //     to: '/Contact'
+            // }
             ]
 
 
